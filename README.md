@@ -28,3 +28,53 @@ optional arguments:
                   recibir.
   -v, --verbose   Describe los valores.
 ```
+
+Output examples:
+
+```bash
+$ src/paypal.py 150
+Si se envían $150.00, se recibirán $141.60.
+```
+
+```bash
+$ src/paypal.py 150 -v
+Si se envían $150.00, se recibirán $141.60.
+
+Tarifa base de comisiones PayPal: 5.4% + $0.30 USD
+Cálculos:
+ Enviado:     150.00
+ Comisión:     -8.40
+ -------------------
+ Recibido:    141.60
+```
+
+```bash
+$ src/paypal.py 100 -e
+Para recibir $100.00, se deben solicitar $106.03.
+```
+
+```bash
+$ src/paypal.py 100 -ev
+Para recibir $100.00, se deben solicitar $106.03.
+
+Tarifa base de comisiones PayPal: 5.4% + $0.30 USD
+Cálculos:
+ Enviado:     106.03
+ Comisión:     -6.03
+ -------------------
+ Recibido:    100.00
+```
+
+```bash
+$ src/paypal.py 50 -ev --commision 4.4
+Para recibir $50.00, se deben solicitar $52.62.
+
+Tarifa base de comisiones PayPal: 4.4% + $0.30 USD
+Cálculos:
+ Enviado:     52.62
+ Comisión:    -2.62
+ ------------------
+ Recibido:    50.00
+```
+
+

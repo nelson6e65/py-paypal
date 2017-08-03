@@ -1,8 +1,12 @@
 # py-paypal
 
-PayPal commisiom calculator.
-
 > Note: Only available in Spanish.
+
+## Description
+
+It calculates commissions and actual money received in PayPal transactions.
+
+
 
 ## Usage
 

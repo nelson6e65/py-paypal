@@ -1,10 +1,14 @@
 # py-paypal
 
-> Note: Only available in Spanish.
+![CodeQL](https://github.com/nelson6e65/py-paypal/workflows/CodeQL/badge.svg?branch=master)
+
 
 ## Description
 
 It calculates commissions and actual money received in PayPal transactions.
+
+
+> Note: Only available in Spanish.
 
 
 
